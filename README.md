@@ -111,11 +111,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#colorrgba
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/dashboard.html
-[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/spiderchart.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/splineseries.html
-[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/uilegendboxpanel.html
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#uiorigins
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#axisscrollstrategies
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#colorrgba
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/dashboard.html
+[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/spiderchart.html
+[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/splineseries.html
+[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/uilegendboxpanel.html
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#uiorigins
