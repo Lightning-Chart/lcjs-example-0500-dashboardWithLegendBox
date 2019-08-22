@@ -18,7 +18,7 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 This example shows a simple dashboard with multiple chart types and LegendBox Panel.
 
-The dashboard allows rendering of multiple scenes in a single view port pane highly efficiently with minimal memory resources. During the creation of a dashboard instance, the amount of rows and columns will have to be specified. This can not be changed afterwards.
+The dashboard allows rendering of multiple scenes in a single view port highly efficiently with minimal memory resources. During the creation of a dashboard instance, the amount of rows and columns will have to be specified. This can not be changed afterwards.
 
 ```javascript
 // Create a dashboard with three rows and two columns.
