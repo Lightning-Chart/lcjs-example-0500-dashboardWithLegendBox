@@ -1,4 +1,4 @@
-# Dashboard with LegendBox
+# Dashboard With LegendBox
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description 
+
+## Description
 
 This example shows a simple dashboard with multiple chart types and LegendBox Panel.
 
@@ -79,19 +80,19 @@ dashboard.setColumnWidth( 1, 3 )
 ```
 
 
-### API links
+## API Links
 
-* Dashboard: [Dashboard][]
-* Legend box panel: [UILegendBoxPanel][]
-* XY cartesian chart: [ChartXY][]
-* Spline series: [SplineSeries][]
-* Scroll strategies: [AxisScrollStrategies][]
-* Spider chart: [SpiderChart][]
-* RGBA color factory: [ColorRGBA][]
-* UI position origins: [UIOrigins][]
+* Dashboard: [Dashboard]
+* Legend box panel: [UILegendBoxPanel]
+* XY cartesian chart: [ChartXY]
+* Spline series: [SplineSeries]
+* Scroll strategies: [AxisScrollStrategies]
+* Spider chart: [SpiderChart]
+* RGBA color factory: [ColorRGBA]
+* UI position origins: [UIOrigins]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -103,19 +104,21 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#axisscrollstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorrgba
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/dashboard.html
-[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/spiderchart.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/splineseries.html
-[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/uilegendboxpanel.html
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#uiorigins
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/dashboard.html
+[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/uilegendboxpanel.html
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/splineseries.html
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#axisscrollstrategies
+[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/spiderchart.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uiorigins
+

@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases a dashboard with LegendBox.
  */
 // Import LightningChartJS
@@ -50,6 +50,7 @@ const legend = db.createLegendBoxPanel({
     })
         .setTitle('Live sales')
         .setPadding({right: 30})
+        .setMouseInteractionsWhileScrolling(true)
     const series = chart.addSplineSeries({pointShape: PointShape.Circle})
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
