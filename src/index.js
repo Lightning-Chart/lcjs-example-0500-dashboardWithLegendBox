@@ -43,15 +43,15 @@ const legend = db.createLegendBoxPanel({
     const dataFrequency = 1000
     const chart = db.createChartXY({
         columnIndex: 0,
-        rowIndex: 0, 
-        columnSpan: 1, 
-        rowSpan: 1, 
+        rowIndex: 0,
+        columnSpan: 1,
+        rowSpan: 1,
         chartXYOptions: { defaultAxisXTickStrategy: AxisTickStrategies.DateTime(dateOrigin) }
     })
         .setTitle('Live sales')
-        .setPadding({right: 30})
+        .setPadding({ right: 30 })
         .setMouseInteractionsWhileScrolling(true)
-    const series = chart.addSplineSeries({pointShape: PointShape.Circle})
+    const series = chart.addSplineSeries({ pointShape: PointShape.Circle })
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
         .setPointSize(5)
