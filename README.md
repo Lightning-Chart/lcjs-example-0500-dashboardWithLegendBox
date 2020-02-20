@@ -72,7 +72,8 @@ The dashboard rows and columns can have varying heights and widths respectively 
 
 ```javascript
 // Set height of the first row of a dashboard.
-// By default each row and column has a size of 1; The size is always relative to the combined size of each row / column.
+// By default each row and column has a size of 1.
+// The size is always relative to the combined size of each row / column.
 dashboard.setRowHeight( 0, 2 )
 // Set width of the first and the second column of a dashboard.
 // First column width will be 2/5 of the entire view's width.
