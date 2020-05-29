@@ -116,12 +116,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/dashboard.html
-[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/uilegendboxpanel.html
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/splineseries.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#axisscrollstrategies
-[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/spiderchart.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#uiorigins
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/dashboard.html
+[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/uilegendboxpanel.html
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
+[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/splineseries.html
+[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#axisscrollstrategies
+[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/spiderchart.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
+[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uiorigins
 
