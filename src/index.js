@@ -11,7 +11,8 @@ const {
     AxisScrollStrategies,
     PointShape,
     SolidFill,
-    AxisTickStrategies
+    AxisTickStrategies,
+    Themes
 } = lcjs
 
 const colors = [ColorRGBA(0, 255, 0, 0), ColorRGBA(255, 0, 0, 0)]
@@ -24,6 +25,7 @@ const {
 
 // Create Dashboard and stand-alone LegendBox.
 const db = lightningChart().Dashboard({
+    // theme: Themes.dark 
     numberOfRows: 2,
     numberOfColumns: 2
 })
@@ -45,12 +47,12 @@ const legend = db.createLegendBoxPanel({
         columnIndex: 0,
         rowIndex: 0,
         columnSpan: 1,
-        rowSpan: 1,
-        chartXYOptions: { defaultAxisXTickStrategy: AxisTickStrategies.DateTime(dateOrigin) }
+        rowSpan: 1
     })
         .setTitle('Live sales')
         .setPadding({ right: 30 })
         .setMouseInteractionsWhileScrolling(true)
+
     const series = chart.addSplineSeries({ pointShape: PointShape.Circle })
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
@@ -63,8 +65,12 @@ const legend = db.createLegendBoxPanel({
         )
 
     chart.getDefaultAxisX()
-        .setInterval(-60 * 1000, 0)
+        .setInterval(-61 * 1000, 0)
         .setScrollStrategy(AxisScrollStrategies.progressive)
+        .setTickStrategy(
+            AxisTickStrategies.DateTime,
+            (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin)
+        )
     chart.getDefaultAxisY()
         .setTitle('Units sold')
         .setInterval(0, 500)

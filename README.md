@@ -85,14 +85,14 @@ dashboard.setColumnWidth( 1, 3 )
 
 ## API Links
 
-* Dashboard: [Dashboard]
-* Legend box panel: [UILegendBoxPanel]
-* XY cartesian chart: [ChartXY]
-* Spline series: [SplineSeries]
-* Scroll strategies: [AxisScrollStrategies]
-* Spider chart: [SpiderChart]
-* RGBA color factory: [ColorRGBA]
-* UI position origins: [UIOrigins]
+* [Dashboard]
+* [Legend box panel]
+* [XY cartesian chart]
+* [Spline series]
+* [Scroll strategies]
+* [Spider chart]
+* [RGBA color factory]
+* [UI position origins]
 
 
 ## Support
@@ -116,12 +116,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/dashboard.html
-[UILegendBoxPanel]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/uilegendboxpanel.html
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[SplineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/splineseries.html
-[AxisScrollStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#axisscrollstrategies
-[SpiderChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/spiderchart.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
-[UIOrigins]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#uiorigins
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/dashboard.html
+[Legend box panel]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/uilegendboxpanel.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/splineseries.html
+[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#axisscrollstrategies
+[Spider chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/spiderchart.html
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorrgba
+[UI position origins]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#uiorigins
 
