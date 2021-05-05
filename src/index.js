@@ -58,7 +58,7 @@ const legend = db.createLegendBoxPanel({
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
         .setPointSize(5)
         .setCursorInterpolationEnabled(false)
-        .setResultTableFormatter((tableBuilder, series, x, y) => tableBuilder
+        .setCursorResultTableFormatter((tableBuilder, series, x, y) => tableBuilder
             .addRow(series.getName())
             .addRow('Time : ', series.axisX.formatValue(x))
             .addRow('Sold : ', y.toFixed(0) + ' pieces')
@@ -123,7 +123,7 @@ const legend = db.createLegendBoxPanel({
             { axis: 'November', value: 1400 },
             { axis: 'December', value: 1500 }
         )
-        .setResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) => tableContentBuilder
+        .setCursorResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) => tableContentBuilder
             .addRow(series.getName())
             .addRow(axis)
             .addRow('$' + value)
@@ -146,7 +146,7 @@ const legend = db.createLegendBoxPanel({
             { axis: 'November', value: 1300 },
             { axis: 'December', value: 1400 }
         )
-        .setResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) => tableContentBuilder
+        .setCursorResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) => tableContentBuilder
             .addRow(series.getName())
             .addRow(axis)
             .addRow('$' + value)
