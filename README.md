@@ -1,6 +1,6 @@
-# Dashboard With LegendBox
+# JavaScript Dashboard With LegendBox
 
-![Dashboard With LegendBox](dashboardWithLegendbox.png)
+![JavaScript Dashboard With LegendBox](dashboardWithLegendbox.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
