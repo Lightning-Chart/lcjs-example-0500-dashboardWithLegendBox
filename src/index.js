@@ -7,16 +7,11 @@ const lcjs = require('@arction/lcjs')
 // Extract required parts from LightningChartJS.
 const {
     lightningChart,
-    ColorRGBA,
     AxisScrollStrategies,
     PointShape,
-    SolidFill,
     AxisTickStrategies,
     Themes
 } = lcjs
-
-const colors = [ColorRGBA(0, 255, 0, 0), ColorRGBA(255, 0, 0, 0)]
-const fillStyles = colors.map((color) => new SolidFill({ color: color.setA(150) }))
 
 // Import data-generators from 'xydata'-library.
 const {
@@ -25,7 +20,7 @@ const {
 
 // Create Dashboard and stand-alone LegendBox.
 const db = lightningChart().Dashboard({
-    // theme: Themes.dark 
+    // theme: Themes.darkGold 
     numberOfRows: 2,
     numberOfColumns: 2
 })
@@ -108,7 +103,6 @@ const legend = db.createLegendBoxPanel({
 
     chart.addSeries(PointShape.Circle)
         .setName('Sales Profits')
-        .setFillStyle(fillStyles[0])
         .addPoints(
             { axis: 'January', value: 100 },
             { axis: 'February', value: 200 },
@@ -131,7 +125,6 @@ const legend = db.createLegendBoxPanel({
 
     chart.addSeries(PointShape.Circle)
         .setName('Development Costs')
-        .setFillStyle(fillStyles[1])
         .addPoints(
             { axis: 'January', value: 0 },
             { axis: 'February', value: 100 },
