@@ -1,6 +1,6 @@
 # JavaScript Dashboard With LegendBox
 
-![JavaScript Dashboard With LegendBox](dashboardWithLegendbox.png)
+![JavaScript Dashboard With LegendBox](dashboardWithLegendbox-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -8,13 +8,13 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The demo can be used as an example or a seed project. Local execution requires the following steps:
 
-- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
-- Open the project folder in a terminal:
+-   Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
+-   Open the project folder in a terminal:
 
-        npm install              # fetches dependencies
-        npm start                # builds an application and starts the development server
+          npm install              # fetches dependencies
+          npm start                # builds an application and starts the development server
 
-- The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+-   The application is available at _http://localhost:8080_ in your browser, webpack-dev-server provides hot reload functionality.
 
 
 ## Description
@@ -27,7 +27,7 @@ The dashboard allows rendering of multiple scenes in a single view port highly e
 // Create a dashboard with three rows and two columns.
 const dashboard = lightningChart().Dashboard({
     numberOfRows: 3,
-    numberOfColumns: 2
+    numberOfColumns: 2,
 })
 ```
 
@@ -43,11 +43,11 @@ const chartXY = dashboard.createChartXY({
     // Row span (height, basically).
     columnSpan: 1,
     // Column span (width, basically).
-    rowSpan: 2
+    rowSpan: 2,
 })
 ```
 
-[//]: # "IMPORTANT: The assets will not show before README.md is built - relative path is different!"
+[//]: # 'IMPORTANT: The assets will not show before README.md is built - relative path is different!'
 
 ![](./assets/dashboardPositioning.png)
 
@@ -56,15 +56,15 @@ Dashboards have separate methods for adding a different kind of Charts or Panels
 ```javascript
 // Create a spider chart and attach to dashboard.
 // Row 0, Column 0, Rows to fill 2, Columns to fill 1.
-const spiderChart = dashboard.createSpider( 0, 0, 2, 1 )
+const spiderChart = dashboard.createSpider(0, 0, 2, 1)
 
 // Create a Legend Box Panel and attach to dashboard.
 // Row 0, Column 1, Rows to fill 2, Columns to fill 1.
-const legendBox = dashboard.createLegendBoxPanel( {
+const legendBox = dashboard.createLegendBoxPanel({
     columnIndex: 0,
     rowIndex: 1,
     columnSpan: 2,
-    rowSpan: 1
+    rowSpan: 1,
 })
 ```
 
@@ -74,12 +74,12 @@ The dashboard rows and columns can have varying heights and widths respectively 
 // Set height of the first row of a dashboard.
 // By default each row and column has a size of 1.
 // The size is always relative to the combined size of each row / column.
-dashboard.setRowHeight( 0, 2 )
+dashboard.setRowHeight(0, 2)
 // Set width of the first and the second column of a dashboard.
 // First column width will be 2/5 of the entire view's width.
-dashboard.setColumnWidth( 0, 2 )
+dashboard.setColumnWidth(0, 2)
 // Second column width will be 3/5 of the entire view's width.
-dashboard.setColumnWidth( 1, 3 )
+dashboard.setColumnWidth(1, 3)
 ```
 
 
@@ -99,29 +99,29 @@ dashboard.setColumnWidth( 1, 3 )
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
-Official [API documentation][1] can be found on [Arction][2] website.
+Official [API documentation][1] can be found on [LightningChart][2] website.
 
 If the docs and other materials do not solve your problem as well as implementation help is needed, ask on [StackOverflow][3] (tagged lightningchart).
 
-If you think you found a bug in the LightningChart JavaScript library, please contact support@arction.com.
+If you think you found a bug in the LightningChart JavaScript library, please contact support@lightningchart.com.
 
-Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
+Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@lightningchart.com.
 
 [0]: https://github.com/Arction/
-[1]: https://www.arction.com/lightningchart-js-api-documentation/
-[2]: https://www.arction.com
+[1]: https://lightningchart.com/lightningchart-js-api-documentation/
+[2]: https://lightningchart.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
-[4]: https://www.arction.com/support-services/
+[4]: https://lightningchart.com/support-services/
 
-© Arction Ltd 2009-2020. All rights reserved.
+© LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/dashboard.html
-[Legend box panel]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/uilegendboxpanel.html
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
-[Spline series]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/splineseries.html
-[Scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#axisscrollstrategies
-[Spider chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/spiderchart.html
-[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#colorrgba
-[UI position origins]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#uiorigins
+[Dashboard]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/Dashboard.html
+[Legend box panel]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/UILegendBoxPanel.html
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
+[Spline series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SplineSeries.html
+[Scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/AxisScrollStrategies.html
+[Spider chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SpiderChart.html
+[RGBA color factory]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/functions/ColorRGBA.html
+[UI position origins]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/UIOrigins.html
 
