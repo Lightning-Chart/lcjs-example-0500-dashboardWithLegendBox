@@ -28,6 +28,9 @@ const legend = db.createLegendBoxPanel({
     rowSpan: 1,
 })
 
+const dateOrigin = new Date()
+const dateOriginTime = dateOrigin.getTime()
+
 // Spline
 {
     const dateOrigin = new Date()
@@ -57,9 +60,10 @@ const legend = db.createLegendBoxPanel({
 
     chart
         .getDefaultAxisX()
-        .setInterval({ start: -61 * 1000, end: 0, animate: 0, stopAxisAfter: false })
-        .setScrollStrategy(AxisScrollStrategies.progressive)
+        .setInterval({ start: -61 * 1000, end: 0, stopAxisAfter: false })
         .setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
+        .setScrollStrategy(AxisScrollStrategies.progressive)
+
     chart
         .getDefaultAxisY()
         .setTitle('Units sold')
@@ -75,7 +79,7 @@ const legend = db.createLegendBoxPanel({
         .setStreamRepeat(true)
         .toStream()
         .forEach((point) => {
-            point.x = point.x * dataFrequency
+            point.x = Date.now() - dateOriginTime
             point.y = point.y * 500
             series.add(point)
         })
