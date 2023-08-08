@@ -116,12 +116,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/Dashboard.html
-[Legend box panel]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/UILegendBoxPanel.html
-[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/ChartXY.html
-[Spline series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/SplineSeries.html
-[Scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/variables/AxisScrollStrategies.html
-[Spider chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/SpiderChart.html
-[RGBA color factory]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/functions/ColorRGBA.html
-[UI position origins]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/variables/UIOrigins.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/Dashboard.html
+[Legend box panel]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/UILegendBoxPanel.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/ChartXY.html
+[Spline series]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/SplineSeries.html
+[Scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/AxisScrollStrategies.html
+[Spider chart]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/SpiderChart.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/functions/ColorRGBA.html
+[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/UIOrigins.html
 
