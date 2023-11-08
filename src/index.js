@@ -14,6 +14,7 @@ const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, Th
 const { createProgressiveRandomGenerator } = xydata
 
 // Create Dashboard and stand-alone LegendBox.
+// NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
 const db = lightningChart().Dashboard({
     // theme: Themes.darkGold
     numberOfRows: 2,
