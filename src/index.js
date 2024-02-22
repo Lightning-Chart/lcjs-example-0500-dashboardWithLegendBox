@@ -61,7 +61,7 @@ const dateOriginTime = dateOrigin.getTime()
 
     chart
         .getDefaultAxisX()
-        .setInterval({ start: -61 * 1000, end: 0, stopAxisAfter: false })
+        .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 61 * 1000, stopAxisAfter: false }))
         .setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
         .setScrollStrategy(AxisScrollStrategies.progressive)
 
