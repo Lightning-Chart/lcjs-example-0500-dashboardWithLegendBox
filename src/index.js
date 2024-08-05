@@ -2,13 +2,13 @@
  * LightningChartJS example that showcases a dashboard with LegendBox.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Import xydata
-const xydata = require('@arction/xydata')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, Themes } = lcjs
+const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, emptyFill, Themes } = lcjs
 
 // Import data-generators from 'xydata'-library.
 const { createProgressiveRandomGenerator } = xydata
@@ -49,17 +49,11 @@ const dateOriginTime = dateOrigin.getTime()
         .setPadding({ right: 30 })
 
     const series = chart
-        .addSplineSeries({ pointShape: PointShape.Circle })
+        .addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
+        .setAreaFillStyle(emptyFill)
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
         .setPointSize(5)
-        .setCursorInterpolationEnabled(false)
-        .setCursorResultTableFormatter((tableBuilder, series, x, y) =>
-            tableBuilder
-                .addRow(series.getName())
-                .addRow('Time : ', series.axisX.formatValue(x))
-                .addRow('Sold : ', y.toFixed(0) + ' pieces'),
-        )
 
     chart
         .getDefaultAxisX()
@@ -105,7 +99,7 @@ const dateOriginTime = dateOrigin.getTime()
         .setAxisLabelFont((font) => font.setSize(14).setStyle('italic'))
 
     chart
-        .addSeries(PointShape.Circle)
+        .addSeries()
         .setName('Sales Profits')
         .addPoints(
             { axis: 'January', value: 100 },
@@ -121,15 +115,9 @@ const dateOriginTime = dateOrigin.getTime()
             { axis: 'November', value: 1400 },
             { axis: 'December', value: 1500 },
         )
-        .setCursorResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) =>
-            tableContentBuilder
-                .addRow(series.getName())
-                .addRow(axis)
-                .addRow('$' + value),
-        )
 
     chart
-        .addSeries(PointShape.Circle)
+        .addSeries()
         .setName('Development Costs')
         .addPoints(
             { axis: 'January', value: 0 },
@@ -144,12 +132,6 @@ const dateOriginTime = dateOrigin.getTime()
             { axis: 'October', value: 1100 },
             { axis: 'November', value: 1300 },
             { axis: 'December', value: 1400 },
-        )
-        .setCursorResultTableFormatter((tableContentBuilder, series, value, axis, formatValue) =>
-            tableContentBuilder
-                .addRow(series.getName())
-                .addRow(axis)
-                .addRow('$' + value),
         )
 
     // Add to LegendBox
