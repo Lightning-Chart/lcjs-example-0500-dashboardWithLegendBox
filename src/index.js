@@ -46,7 +46,6 @@ const dateOriginTime = dateOrigin.getTime()
             rowSpan: 1,
         })
         .setTitle('Live sales')
-        .setPadding({ right: 30 })
 
     const series = chart
         .addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
@@ -97,6 +96,7 @@ const dateOriginTime = dateOrigin.getTime()
         .setTitle('Product development costs vs. sales profits')
         .setScaleLabelFont((font) => font.setSize(12))
         .setAxisLabelFont((font) => font.setSize(14).setStyle('italic'))
+        .setAxisInterval({ start: 0, end: 1500, stopAxisAfter: true })
 
     chart
         .addSeries()
