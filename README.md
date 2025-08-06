@@ -1,6 +1,6 @@
-# JavaScript Dashboard With LegendBox
+# JavaScript Dashboard With Legend
 
-![JavaScript Dashboard With LegendBox](dashboardWithLegendbox-darkGold.png)
+![JavaScript Dashboard With Legend](dashboardWithLegendbox-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -60,9 +60,9 @@ Dashboards have separate methods for adding a different kind of Charts or Panels
 // Row 0, Column 0, Rows to fill 2, Columns to fill 1.
 const spiderChart = dashboard.createSpider(0, 0, 2, 1)
 
-// Create a Legend Box Panel and attach to dashboard.
+// Create a Legend Panel and attach to dashboard.
 // Row 0, Column 1, Rows to fill 2, Columns to fill 1.
-const legendBox = dashboard.createLegendBoxPanel({
+const legendBox = dashboard.createLegendPanel({
     columnIndex: 0,
     rowIndex: 1,
     columnSpan: 2,
@@ -88,7 +88,7 @@ dashboard.setColumnWidth(1, 3)
 ## API Links
 
 * [Dashboard]
-* [Legend box panel]
+* [Legend panel]
 * [XY cartesian chart]
 * [Spline series]
 * [Scroll strategies]
@@ -118,12 +118,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Dashboard.html
-[Legend box panel]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/UILegendBoxPanel.html
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/ChartXY.html
-[Spline series]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/SplineSeries.html
-[Scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/AxisScrollStrategies.html
-[Spider chart]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/SpiderChart.html
-[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/functions/ColorRGBA.html
-[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/UIOrigins.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/Dashboard.html
+[Legend panel]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/LegendPanel.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/ChartXY.html
+[Spline series]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/SplineSeries.html
+[Scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/AxisScrollStrategies.html
+[Spider chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/SpiderChart.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/functions/ColorRGBA.html
+[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIOrigins.html
 

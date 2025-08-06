@@ -1,5 +1,5 @@
 /*
- * LightningChartJS example that showcases a dashboard with LegendBox.
+ * LightningChartJS example that showcases a dashboard with Legend.
  */
 // Import LightningChartJS
 const lcjs = require('@lightningchart/lcjs')
@@ -13,7 +13,7 @@ const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, em
 // Import data-generators from 'xydata'-library.
 const { createProgressiveRandomGenerator } = xydata
 
-// Create Dashboard and stand-alone LegendBox.
+// Create Dashboard and stand-alone Legend.
 // NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
 const db = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
@@ -23,8 +23,8 @@ const db = lightningChart({
     numberOfColumns: 2,
 })
 
-// Create a legendBox docked to the Dashboard.
-const legend = db.createLegendBoxPanel({
+// Create a legend docked to the Dashboard.
+const legendPanel = db.createLegendPanel({
     columnIndex: 0,
     rowIndex: 1,
     columnSpan: 1,
@@ -44,12 +44,12 @@ const dateOriginTime = dateOrigin.getTime()
             rowIndex: 0,
             columnSpan: 1,
             rowSpan: 1,
+            legend: { visible: false },
         })
         .setTitle('Live sales')
 
     const series = chart
-        .addPointLineAreaSeries({ dataPattern: 'ProgressiveX' })
-        .setAreaFillStyle(emptyFill)
+        .addPointLineAreaSeries()
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
         .setPointSize(5)
@@ -58,7 +58,7 @@ const dateOriginTime = dateOrigin.getTime()
         .getDefaultAxisX()
         .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 61 * 1000, stopAxisAfter: false }))
         .setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
-        .setScrollStrategy(AxisScrollStrategies.progressive)
+        .setScrollStrategy(AxisScrollStrategies.scrolling)
 
     chart
         .getDefaultAxisY()
@@ -77,11 +77,11 @@ const dateOriginTime = dateOrigin.getTime()
         .forEach((point) => {
             point.x = Date.now() - dateOriginTime
             point.y = point.y * 500
-            series.add(point)
+            series.appendSample(point)
         })
 
-    // Add to LegendBox
-    legend.add(chart)
+    // Add to LegendPanel
+    legendPanel.add(chart)
 }
 
 // Spider
@@ -92,6 +92,7 @@ const dateOriginTime = dateOrigin.getTime()
             rowIndex: 0,
             columnSpan: 1,
             rowSpan: 2,
+            legend: { visible: false },
         })
         .setTitle('Product development costs vs. sales profits')
         .setScaleLabelFont((font) => font.setSize(12))
@@ -134,8 +135,8 @@ const dateOriginTime = dateOrigin.getTime()
             { axis: 'December', value: 1400 },
         )
 
-    // Add to LegendBox
-    legend.add(chart)
+    // Add to LegendPanel
+    legendPanel.add(chart)
 
     // Set the row height
     db.setRowHeight(0, 3)
