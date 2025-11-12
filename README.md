@@ -23,7 +23,7 @@ This example shows a simple dashboard with multiple chart types and LegendBox Pa
 
 The dashboard allows rendering of multiple scenes in a single view port highly efficiently with minimal memory resources. During the creation of a dashboard instance, the amount of rows and columns will have to be specified. This can not be changed afterwards.
 
-**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/**
+**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/more-guides/grouping-charts/**
 
 ```javascript
 // Create a dashboard with three rows and two columns.
@@ -118,12 +118,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Dashboard.html
-[Legend panel]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/LegendPanel.html
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
-[Spline series]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SplineSeries.html
-[Scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/AxisScrollStrategies.html
-[Spider chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SpiderChart.html
-[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/ColorRGBA.html
-[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIOrigins.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Dashboard.html
+[Legend panel]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/UILegendPanel.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ChartXY.html
+[Spline series]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/PointLineAreaSeries.html
+[Scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/AxisScrollStrategies.html
+[Spider chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SpiderChart.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/ColorRGBA.html
+[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/UIOrigins.html
 

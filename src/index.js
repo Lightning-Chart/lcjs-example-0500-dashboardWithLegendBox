@@ -8,13 +8,20 @@ const lcjs = require('@lightningchart/lcjs')
 const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, emptyFill, Themes } = lcjs
+const { lightningChart, AxisScrollStrategies, PointShape, AxisTickStrategies, emptyFill, Themes, LegendPosition } = lcjs
 
 // Import data-generators from 'xydata'-library.
 const { createProgressiveRandomGenerator } = xydata
 
+const exampleContainer = document.getElementById('chart') || document.body
+if (exampleContainer === document.body) {
+    exampleContainer.style.width = '100vw'
+    exampleContainer.style.height = '100vh'
+    exampleContainer.style.margin = '0px'
+}
+
 // Create Dashboard and stand-alone Legend.
-// NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
+// NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/more-guides/grouping-charts/
 const db = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         }).Dashboard({
@@ -27,8 +34,9 @@ const db = lightningChart({
 const legendPanel = db.createLegendPanel({
     columnIndex: 0,
     rowIndex: 1,
-    columnSpan: 1,
+    columnSpan: 2,
     rowSpan: 1,
+    legend: { position: LegendPosition.TopCenter, entryMargin: 10, renderOnTop: true },
 })
 
 const dateOrigin = new Date()
@@ -49,7 +57,9 @@ const dateOriginTime = dateOrigin.getTime()
         .setTitle('Live sales')
 
     const series = chart
-        .addPointLineAreaSeries()
+        .addPointLineAreaSeries(
+            { automaticColorIndex: 0 }
+        )
         .setName('Product')
         .setStrokeStyle((strokeStyle) => strokeStyle.setThickness(2))
         .setPointSize(5)
@@ -91,7 +101,7 @@ const dateOriginTime = dateOrigin.getTime()
             columnIndex: 1,
             rowIndex: 0,
             columnSpan: 1,
-            rowSpan: 2,
+            rowSpan: 1,
             legend: { visible: false },
         })
         .setTitle('Product development costs vs. sales profits')
@@ -100,7 +110,9 @@ const dateOriginTime = dateOrigin.getTime()
         .setAxisInterval({ start: 0, end: 1500, stopAxisAfter: true })
 
     chart
-        .addSeries()
+        .addSeries(
+            { automaticColorIndex: 2 }
+        )
         .setName('Sales Profits')
         .addPoints(
             { axis: 'January', value: 100 },
@@ -118,7 +130,9 @@ const dateOriginTime = dateOrigin.getTime()
         )
 
     chart
-        .addSeries()
+        .addSeries(
+            { automaticColorIndex: 3 }
+        )
         .setName('Development Costs')
         .addPoints(
             { axis: 'January', value: 0 },
@@ -139,5 +153,5 @@ const dateOriginTime = dateOrigin.getTime()
     legendPanel.add(chart)
 
     // Set the row height
-    db.setRowHeight(0, 3)
+    db.setRowHeight(0, 8)
 }
