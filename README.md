@@ -51,7 +51,7 @@ const chartXY = dashboard.createChartXY({
 
 [//]: # 'IMPORTANT: The assets will not show before README.md is built - relative path is different!'
 
-![](./assets/dashboardPositioning.png)
+![Dashboard positioning](./assets/dashboardPositioning.png)
 
 Dashboards have separate methods for adding a different kind of Charts or Panels. Dashboard represents a grid with rows & columns. During the creation of the element, the row & column indices and the horizontal & vertical spans should be specified to position it in the correct place and fill the desired amount of cells.
 
